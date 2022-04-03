@@ -1,0 +1,35 @@
+/******************************************** 
+********************FORMS******************** 
+********************************************/
+
+.formContent {
+  position: relative;
+  text-align: center;
+
+  form {
+
+    input, textarea {
+      display: block;
+      width: 67%;
+      margin: 0 auto 20px auto;
+      padding: 20px;
+      font-size: 1.1em;
+      border: 3px solid #eeeeee;
+      resize: none;
+    }
+
+    input:required:focus:invalid {
+      background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% rgba(255,38,24,0.0050);
+      background-size: 17px;
+      border: 1px solid rgba(255,68,61,0.20) !important;
+      outline: 0 none;
+    }
+
+    input:required:focus:valid {
+      background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% rgba(15,255,56,0.0010);
+      background-size: 17px;
+    }
+
+  }
+
+}

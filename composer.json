@@ -1,0 +1,25 @@
+{
+    "name": "ezequiasfonseca/desafio",
+    "description": "Desafio Gestao de Filmes e Series",
+    "authors": [
+      {
+        "name": "Ezequias Fonseca",
+        "email": "ezequiasfonseca@gmail.com"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Source\\":"source/"
+      },
+      "files": [
+        "source/Config.php",
+        "source/core/functions/helpers.php"
+      ]
+    },
+    "require": {
+      "coffeecode/router": "1.0.*",
+      "league/plates": "v4.0.0-alpha",
+      "vlucas/phpdotenv": "^5.4",
+      "guzzlehttp/guzzle": "^7.4"
+    }
+}

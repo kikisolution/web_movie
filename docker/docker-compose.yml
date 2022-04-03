@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+
+  web-srv:
+    build: ./configs/php
+    container_name: web-srv
+    image: srv-apache
+    volumes:
+      - ./configs/apache/server.pem:/etc/ssl/certs/server.pem
+      - ./configs/apache/server-key.pem:/etc/ssl/private/server-key.pem
+      - ./configs/apache/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./configs/apache/ports.conf:/etc/apache2/ports.conf
+      - ./configs/php/php.ini:/usr/local/etc/php/php.ini
+      - ../:/var/www/html/
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+

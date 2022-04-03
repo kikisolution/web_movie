@@ -1,0 +1,29 @@
+/*
+Page List Films
+ */
+.favorits {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 575.98px) {
+    justify-content: center;
+  }
+
+  .favorits_user {
+    flex-basis: 90%;
+    padding: 20px;
+    background: $light-color;
+    margin: 1%;
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      flex-basis: 48%;
+    }
+
+    @media (min-width: 768px) {
+      flex-basis: 30%;
+    }
+  }
+
+}
+
