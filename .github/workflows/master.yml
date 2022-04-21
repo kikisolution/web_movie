@@ -1,0 +1,17 @@
+name: Deploy Master
+on:
+  push:
+    branches:
+      - master
+jobs:
+  staging:
+    runs-on: ubuntu-latest
+    steps:
+      - id: test
+        uses: invi5H/ssh-action@v1
+        with:
+          NAME: deployStaging
+          SSH_HOST: ${{ secrets.ADDRESS_VPS_02 }}
+          SSH_USER: ${{ secrets.USER_VPS_02 }}
+          SSH_KEY: ${{ secrets.KEY_VPS_02 }}
+      - run: ssh ${{ steps.test.outputs.SERVER }} pwd
