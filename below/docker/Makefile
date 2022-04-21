@@ -16,6 +16,3 @@ down:
 logs:
 	docker-compose logs -f
 
-.PHONY: exec
-exec:
-	docker exec -it $(NAME_SERVER) bash
