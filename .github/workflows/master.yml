@@ -7,11 +7,11 @@ jobs:
   staging:
     runs-on: ubuntu-latest
     steps:
-      - id: test
-        uses: invi5H/ssh-action@v1
+      - name: SSH Command
+        uses: D3rHase/ssh-command-action@v0.2
         with:
-          NAME: deployStaging
-          SSH_HOST: ${{ secrets.ADDRESS_VPS_02 }}
-          SSH_USER: ${{ secrets.USER_VPS_02 }}
-          SSH_KEY: ${{ secrets.KEY_VPS_02 }}
-      - run: ssh ${{ steps.test.outputs.SERVER }} pwd
+          HOST: ${{ secrets.ADDRESS_VPS_02 }}
+          USER: ${{ secrets.USER_VPS_02 }}
+          PRIVATE_SSH_KEY: ${{ secrets.KEY_VPS_02 }}
+          COMMAND: pwd
+
