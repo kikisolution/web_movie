@@ -13,6 +13,6 @@ npm install
 echo "#---Npm run production---#"
 npm run production
 
-echo "#---Deply staging finished execution.---#"
+echo "#---Deply staging finished execution.---#."
 exit
 
