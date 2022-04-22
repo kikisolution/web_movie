@@ -4,8 +4,8 @@ echo "######################################"
 cd /home/ubuntu/data/www/web/staging/movies
 
 echo "######################################"
-echo "#---Git pull origin master---#"
-echo "######################################."
+echo "#---Git pull origin staging---#"
+echo "######################################"
 git pull origin staging
 
 echo "######################################"
