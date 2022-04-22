@@ -1,4 +1,4 @@
-name: Deploy Master
+name: Deploy Staging Master
 on:
   push:
     branches:
