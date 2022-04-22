@@ -8,15 +8,23 @@ echo "#---Git pull origin master---#"
 echo "######################################"
 git pull origin master
 
+echo "######################################"
 echo "#---Composer install --no-dev --optimize-autoloader---#"
+echo "######################################"
 composer install --no-dev --optimize-autoloader
 
+echo "######################################"
 echo "#---Npm install---#"
+echo "######################################"
 npm install
 
+echo "######################################"
 echo "#---Npm run production---#"
+echo "######################################"
 npm run production
 
+echo "######################################"
 echo "#---Deply staging finished execution.---#"
+echo "######################################"
 exit
 
