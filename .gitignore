@@ -3,3 +3,5 @@ vendor
 .idea
 .vscode
 .env
+below/docker/*
+composer.lock
