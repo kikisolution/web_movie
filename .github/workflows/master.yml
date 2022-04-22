@@ -13,5 +13,5 @@ jobs:
           HOST: ${{ secrets.ADDRESS_VPS_02 }}
           USER: ${{ secrets.USER_VPS_02 }}
           PRIVATE_SSH_KEY: ${{ secrets.PRIVATE_SSH_KEY_VPS_02 }}
-          COMMAND: 'below/deploy/production.sh'
+          COMMAND: '../../below/deploy/production.sh'
 
