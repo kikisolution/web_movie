@@ -12,4 +12,5 @@ npm install
 
 #npm run production
 exit
+
 echo "Deply staging finished execution."
