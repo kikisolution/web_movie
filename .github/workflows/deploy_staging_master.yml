@@ -13,7 +13,7 @@ jobs:
           HOST: ${{ secrets.ADDRESS_VPS_02 }}
           USER: ${{ secrets.USER_VPS_02 }}
           PRIVATE_SSH_KEY: ${{ secrets.PRIVATE_SSH_KEY_VPS_02 }}
-#          COMMAND: 'data/www/web/staging/movies/below/deploy/staging.sh'
-          COMMAND: 'kiki'
+          COMMAND: 'data/www/web/staging/movies/below/deploy/staging.sh'
+
 
 
