@@ -2,7 +2,7 @@ name: Deploy Staging Master
 on:
   push:
     branches:
-      - master
+      - staging
 jobs:
   staging:
     runs-on: ubuntu-latest
