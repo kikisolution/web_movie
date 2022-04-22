@@ -1,4 +1,4 @@
-echo "#---Deploy staging script started."
+echo "#---Deploy staging script started.---#"
 cd /home/ubuntu/data/www/web/staging/movies
 echo "#---Git pull origin master"
 git pull origin master
