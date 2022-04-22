@@ -1,4 +1,4 @@
-name: Deploy Staging
+name: Deploy Production
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ jobs:
   staging:
     runs-on: ubuntu-latest
     steps:
-      - name: SSH Command
+      - name: SSH Command Production
         uses: D3rHase/ssh-command-action@v0.2
         with:
           HOST: ${{ secrets.ADDRESS_VPS_01 }}
