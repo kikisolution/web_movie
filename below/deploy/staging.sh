@@ -10,7 +10,9 @@ composer install --no-dev --optimize-autoloader
 echo "#---Npm install---#"
 npm install
 
-#npm run production
+echo "#---Npm run production---#"
+npm run production
+
+echo "#---Deply staging finished execution.---#"
 exit
 
-echo "Deply staging finished execution."
