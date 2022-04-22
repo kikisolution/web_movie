@@ -26,6 +26,6 @@ npm run production
 
 echo "######################################"
 echo "#---Deply staging finished execution.---#"
-echo "######################################"
+echo "######################################."
 exit
 
