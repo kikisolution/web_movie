@@ -27,5 +27,5 @@ npm run production
 
 echo "######################################"
 echo "#---Deploy production finished execution.---#"
-echo "######################################."
+echo "######################################"
 exit
