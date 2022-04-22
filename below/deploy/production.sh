@@ -21,7 +21,7 @@ npm install
 
 echo "######################################"
 echo "#---Npm run production---#"
-echo "######################################"
+echo "######################################."
 node --version
 npm run production
 
