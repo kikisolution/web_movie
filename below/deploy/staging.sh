@@ -6,7 +6,7 @@ cd /home/ubuntu/data/www/web/staging/movies
 echo "######################################"
 echo "#---Git pull origin master---#"
 echo "######################################"
-git pull origin master
+git pull origin staging
 
 echo "######################################"
 echo "#---Composer install --no-dev --optimize-autoloader---#"
