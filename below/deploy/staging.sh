@@ -1,6 +1,5 @@
-echo "Deploy script started."
-cd /home/ubuntu/data/www/apis/staging/movies
+echo "Deploy staging script started."
 git pull origin master
 composer install --no-dev --optimize-autoloader
 exit
-echo "Deply finished execution."
+echo "Deply staging finished execution."
