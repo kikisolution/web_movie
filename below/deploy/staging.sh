@@ -6,6 +6,7 @@ cd /home/ubuntu/data/www/web/staging/movies
 echo "######################################"
 echo "#---Git pull origin staging---#"
 echo "######################################"
+git checkout staging
 git pull origin staging
 
 echo "######################################"
@@ -25,7 +26,7 @@ node --version
 npm run production
 
 echo "######################################"
-echo "#---Deply staging finished execution.---#"
+echo "#---Deploy staging finished execution.---#"
 echo "######################################."
 exit
 

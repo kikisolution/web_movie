@@ -1,0 +1,19 @@
+name: Deploy Staging
+on:
+  push:
+    branches:
+      - master
+jobs:
+  staging:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH Command
+        uses: D3rHase/ssh-command-action@v0.2
+        with:
+          HOST: ${{ secrets.ADDRESS_VPS_01 }}
+          USER: ${{ secrets.USER_VPS_01 }}
+          PRIVATE_SSH_KEY: ${{ secrets.PRIVATE_SSH_KEY_VPS_01 }}
+          COMMAND: 'data/www/web/staging/movies/below/deploy/production.sh'
+
+
+
