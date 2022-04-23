@@ -1,7 +1,7 @@
 echo "######################################"
 echo "#---Deploy production script started.---#"
 echo "######################################"
-cd /home/ubuntu/data/www/web/staging/movies
+cd /home/ubuntu/data/www/web/production/movies
 
 echo "######################################"
 echo "#---Git pull origin master---#"
