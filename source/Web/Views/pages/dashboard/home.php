@@ -2,6 +2,6 @@
 
 <div class="dashboard_home">
     <h2>Seja Bem vindo <?=$dataUser->first_name;?>!!</h2>
-    <p>Aqui você gerencia seus filmes e séries favoritos!</p>
+    <p>Aqui você gerencia seus filmes e séries favoritos!!</p>
     <div id="dateCurrent"></div>
 </div>
